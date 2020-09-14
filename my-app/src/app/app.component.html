@@ -1,0 +1,43 @@
+
+ <body style="background-color:powderblue;">
+<div class="img">
+    <img  class="float_left"  [src]="myimage1">
+</div>
+
+  <!--Navigation bar in the top-->  
+<div class="topnav">
+<a href="index.html">Home</a>
+<a href="film.html">Film</a>
+<a href="kommendefilm.html">Kommende film</a>
+<a href="kontakt.html">Kontakt</a>
+</div>  
+
+
+<div class="Formbox">
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+     <label>
+     Navn
+     <input type="text" formControlName="name" >
+      </label>
+
+      <label>
+        Telefon
+        <input type="text" formControlName="phonenumber">
+        
+     </label>
+
+     <label>
+             Email
+            <input type="text" formControlName="Email">
+            
+      </label>
+
+      <label>
+          Din besked
+          <textarea rows="10" id="title" name="title" formControlName="text"></textarea>
+      </label>
+
+      <button type="submit">Submit</button>
+</form>
+</div>
+</body>
