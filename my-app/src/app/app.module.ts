@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { SeatsComponent } from './seats/seats.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SeatsComponent
+    SeatsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,28 @@
+
+<div class="Formbox">
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+         <label>
+         Navn
+         <input type="text" formControlName="name" >
+          </label>
+    
+          <label>
+            Telefon
+            <input type="text" formControlName="phonenumber">
+            
+         </label>
+    
+         <label>
+                 Email
+                <input type="text" formControlName="Email">
+                
+          </label>
+    
+          <label>
+              Din besked
+              <textarea rows="10" id="title" name="title" formControlName="text"></textarea>
+          </label>
+    
+          <button type="submit">Submit</button>
+    </form> 
+    <p>Hej medx dig</p>

@@ -1,16 +1,19 @@
 
- <body style="background-color:powderblue;">
+ 
 <div class="img">
     <img  class="float_left"  [src]="myimage1">
 </div>
 
   <!--Navigation bar in the top-->  
-<div class="topnav">
+<nav>
 <a href="index.html">Home</a>
-<a href="film.html">Film</a>
+<a routerLink="/seats" routerLinkActive="active">Film</a>
 <a href="kommendefilm.html">Kommende film</a>
-<a href="kontakt.html">Kontakt</a>
-</div>  
+<a routerLink="/contact" routerLinkActive="active">Kontakt</a>
+<router-outlet></router-outlet>
+</nav>  
+
+<!--
 
 
 <div class="Formbox">
@@ -39,5 +42,4 @@
 
       <button type="submit">Submit</button>
 </form>
-</div>
-</body>
+</div> -->
