@@ -20,8 +20,16 @@
                     
               </label>
         
-            
+              
         
               <button type="submit">Book</button>
         </form> 
+
+        <ul *ngFor= "let seat of seats">
+                <li>
+                    {{seats.seatsName}}
+                    {{seats.seatsEmail}} 
+                    {{seats.seatsTicketAmount}}
+                </li>
+            </ul>
        
