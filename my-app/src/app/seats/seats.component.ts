@@ -14,7 +14,7 @@ export class SeatsComponent implements OnInit {
 
   SeatsForm = new FormGroup({
     name: new FormControl(''),
-    tickets: new FormControl(''),
+    TicketAmount: new FormControl(''),
     Email: new FormControl (''),
     
   });
@@ -35,8 +35,7 @@ export class SeatsComponent implements OnInit {
 
   ngOnInit(): void {
     
-      this.SeatService.getTodosHttp1().subscribe(data=>{this.seats=data
-      });
+      
 
     
       

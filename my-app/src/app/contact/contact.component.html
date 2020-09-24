@@ -3,12 +3,12 @@
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
          <label>
          Navn
-         <input type="text" formControlName="name" >
+         <input type="text" formControlName="Name" >
           </label>
     
           <label>
             Telefon
-            <input type="text" formControlName="phonenumber">
+            <input type="number" formControlName="phoneNumber">
             
          </label>
     
@@ -20,7 +20,7 @@
     
           <label>
               Din besked
-              <textarea rows="10" id="title" name="title" formControlName="text"></textarea>
+              <textarea rows="10" id="title" name="title" formControlName="Text"></textarea>
           </label>
     
           <button type="submit">Submit</button>
